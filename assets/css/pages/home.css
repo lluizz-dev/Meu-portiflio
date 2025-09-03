@@ -10,6 +10,10 @@ main {
     justify-content: center;
 }
 
+.c1 {
+    background-color: #e5f3dd;
+}
+
 main > .centralizar {
     display: flex;
     flex-direction: column;
@@ -17,6 +21,8 @@ main > .centralizar {
 
 .hello {
     display: flex;
+    justify-content: center;
+    background-color: #e5f3dd;
 }
 
 .world {
