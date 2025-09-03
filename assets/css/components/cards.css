@@ -1,0 +1,55 @@
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'p1 p2'
+        'p3 p4'
+        'p5 p6'
+        'p7 p8';
+
+    gap: 2rem;
+}
+
+.card_1 {
+    grid-area: p1;
+}
+.card_2 {
+    grid-area: p2;
+}
+.card_3 {
+    grid-area: p3;
+}
+.card_4 {
+    grid-area: p4;
+}
+.card_5 {
+    grid-area: p5;
+}
+.card_6 {
+    grid-area: p6;
+}
+.card_7 {
+    grid-area: p7;
+}
+.card_8 {
+    grid-area: p8;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cards > .card > .img > img {
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+}
+
+aside {
+    padding: 1.5rem;
+}

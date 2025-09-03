@@ -1,0 +1,22 @@
+
+
+main {
+    display: flex;
+    justify-content: center;
+    background-color: #ecf0f1;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #48762e;
+}
+
+.butao {
+    display: flex;
+}
+

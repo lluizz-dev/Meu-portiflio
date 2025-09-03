@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    justify-content: center;
+    background-color: #ecf0f1;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.meio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+aside {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+aside.p1 , aside.p2{
+    padding: 1.5rem;
+}
+
+aside.p1 + img {
+    height: auto;
+    width: auto;
+}

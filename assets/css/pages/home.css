@@ -1,0 +1,44 @@
+/* Estilização da página principal(home) */
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main > .centralizar {
+    display: flex;
+    flex-direction: column;
+}
+
+.hello {
+    display: flex;
+}
+
+.world {
+    display: flex;
+    flex-direction: column;
+}
+
+.world > p {
+    margin: 0;
+}
+
+.world > h2 {
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

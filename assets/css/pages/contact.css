@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    justify-content: center;
+    background-color: #ecf0f1;
+}
+
+.centralizar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'p1 p2';
+    gap: 1.5rem;
+}
+
+aside {
+    grid-area: p2;
+}
+
+p {
+    margin: 0;
+}
+h3 {
+    margin: 0;
+}
