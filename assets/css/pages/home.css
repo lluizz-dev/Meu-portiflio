@@ -1,5 +1,7 @@
 /* Estilização da página principal(home) */
 
+/* AJEITAR A BARRA DE ROLAGEM EMBAIXO */
+
 /* header */
 
 .pag > a {
@@ -29,14 +31,20 @@
 }
 
 .pag > a:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
-/*  */
+/* Main */
+
+/* Hero */
+
+#mar {
+    margin-top: 0;
+}
 
 img {
-    height: 150px;
-    width: 120px;
+    height: 200px;
+    width: 160px;
     padding: 1rem;
 }
 
@@ -45,8 +53,14 @@ main {
     justify-content: center;
 }
 
-.c1 {
+.hero {
     background-color: #e5f3dd;
+    margin: 57px 0 2rem 0;
+}
+
+main > .centralizar {
+    display: flex;
+    flex-direction: column;
 }
 
 .hello {
@@ -60,15 +74,23 @@ main {
 .world {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .world > p {
     margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--texto-escuro);
 }
 
 .world > h2 {
     margin: 0;
+    font-size: 1.5rem;
+    color: var(--cor-segundaria);
 }
+
+/* Características */
 
 .info {
     display: flex;
@@ -79,4 +101,16 @@ main {
 .meio{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
 }
+
+aside i, aside p, aside h3 {
+    color: var(--texto-escuro);
+    margin: 0;
+}
+
+.info h2 {
+    font-size: 2rem;
+    color: var(--cor-segundaria);
+}
+/*  */

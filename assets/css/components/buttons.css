@@ -1,0 +1,18 @@
+.world > a {
+    text-decoration: none;
+    color: var(--cor-segundaria );
+    display: inline-block;
+    border: 2px solid var(--cor-segundaria);
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 0.875rem;
+    padding: 1rem;
+    position: relative;
+    font-weight: 500;
+}
+
+.world > a:hover {
+    background-color: var(--cor-segundaria);
+    color: var(--fundo-hero);
+    transition: 0.3s 0s ease;
+}
