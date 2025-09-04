@@ -1,5 +1,39 @@
 /* Estilização da página principal(home) */
 
+/* header */
+
+.pag > a {
+    position: relative;
+    color: #354d2a;
+}
+
+.pag a:first-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #5a933c;
+}
+
+.pag > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #5a933c;
+    transition: width 0.3s ease;
+}
+
+.pag > a:hover::after {
+  width: 100%;
+}
+
+/*  */
+
 img {
     height: 150px;
     width: 120px;

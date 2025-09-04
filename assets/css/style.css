@@ -53,10 +53,6 @@ span {
     color: #5a933c;
 }
 
-header > .centralizar > .pag > a:hover {
-    color: #48762e;
-}
-
 .pag {
     display: flex;
     gap: 1rem;
