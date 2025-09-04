@@ -1,8 +1,9 @@
 /* Estilização da página principal(home) */
 
 img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 120px;
+    padding: 1rem;
 }
 
 main {
@@ -22,7 +23,9 @@ main > .centralizar {
 .hello {
     display: flex;
     justify-content: center;
+    gap: 1.5rem;
     background-color: #e5f3dd;
+    padding: 1rem;
 }
 
 .world {
