@@ -49,11 +49,6 @@ main {
     background-color: #e5f3dd;
 }
 
-main > .centralizar {
-    display: flex;
-    flex-direction: column;
-}
-
 .hello {
     display: flex;
     justify-content: center;
