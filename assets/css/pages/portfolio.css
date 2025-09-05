@@ -42,13 +42,29 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1.5rem;
+    flex-wrap: nowrap;
+    text-align: center;
 }
 
-h1 {
-    color: #48762e;
+.inicio > h1 {
+    color: var(--cor-segundaria);
+    margin: 0;
+    padding: 1.5rem;
 }
 
 .butao {
     display: flex;
 }
 
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+    .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:'p1' 'p2' 'p3' 'p4' 'p5' 'p6' 'p7' 'p8';
+    gap: 2rem;
+}
+}

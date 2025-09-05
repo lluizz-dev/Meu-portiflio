@@ -1,3 +1,7 @@
+/* Botões */
+
+/* Botão do hero */
+
 .world > a {
     text-decoration: none;
     color: var(--cor-segundaria );
@@ -16,3 +20,43 @@
     color: var(--fundo-hero);
     transition: 0.3s 0s ease;
 }
+
+/* TODO: AJEITAR O BOTÃO NA RESPONSIVIDADE */
+
+/* Botões do portifólio */
+
+/* Botões de seção */
+
+.botaos > button {
+    background-color: transparent;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+}
+
+.botaos > button:first-child {
+    color: #ffffff;
+    background-color: var(--cor-primaria);
+}
+
+.botaos > button:hover {
+    color: #ffffff;
+    background-color: var(--cor-segundaria);
+    border-color: var(--cor-segundaria);
+    position: relative;
+    transition: 0.3s 0s ease;
+    cursor: pointer;
+}
+
+/* Botão do card */
+
+.img a {
+    text-decoration: none;
+    background-color: transparent;
+    color:  var(--cor-primaria-escura);
+    border: 2px solid var(--cor-primaria-escura);
+    border-radius: 5px;
+    padding: 10px;
+}
+

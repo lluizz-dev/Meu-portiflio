@@ -76,7 +76,7 @@ span {
 /* Main */
 
 main {
-    margin-top: 57px;
+    margin: 57px 0 3rem 0;
 }
 
 /* Footer */
@@ -88,7 +88,6 @@ footer {
     display: flex;
     justify-content: center;
     color: #ffffff;
-    margin-top: 3rem;
     padding: 1.5rem;
 }
 footer > .centralizar {
@@ -162,4 +161,22 @@ article h3 {
 footer > .centralizar > p {
     color: rgba(119, 119, 119, 1);
     font-size: 0.875rem;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+
+    .f_p1 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'sobre' 'links' 'redes';
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .f_p1 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'sobre' 'links' 'redes';
+    }
 }
