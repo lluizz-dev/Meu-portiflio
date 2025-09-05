@@ -113,4 +113,43 @@ aside i, aside p, aside h3 {
     font-size: 2rem;
     color: var(--cor-segundaria);
 }
-/*  */
+
+/* Recursividade */
+
+@media screen and (max-width: 992px) {
+    .hello {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .world {
+        align-items: center;
+    }
+
+    .world p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .meio {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .f_p1 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'sobre' 'links' 'redes';
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .meio {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .f_p1 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'sobre' 'links' 'redes';
+    }
+}
