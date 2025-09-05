@@ -135,21 +135,11 @@ aside i, aside p, aside h3 {
     .meio {
         grid-template-columns: 1fr 1fr;
     }
-
-    .f_p1 {
-        grid-template-columns: 1fr;
-        grid-template-areas: 'sobre' 'links' 'redes';
-    }
 }
 
 @media screen and (max-width: 576px) {
     .meio {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .f_p1 {
-        grid-template-columns: 1fr;
-        grid-template-areas: 'sobre' 'links' 'redes';
     }
 }

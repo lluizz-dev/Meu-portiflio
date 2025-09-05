@@ -33,6 +33,7 @@
     border-radius: 20px;
     padding: 0.5rem 1.5rem;
     font-size: 0.875rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .botaos > button:first-child {
@@ -51,12 +52,33 @@
 
 /* Botão do card */
 
-.img a {
-    text-decoration: none;
-    background-color: transparent;
-    color:  var(--cor-primaria-escura);
-    border: 2px solid var(--cor-primaria-escura);
-    border-radius: 5px;
-    padding: 10px;
+.img {
+    position: relative;
 }
 
+.img a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: transparent;
+  color: var(--cor-primaria-escura);
+  border: 2px solid var(--cor-primaria-escura);
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.card:hover .img a {
+  opacity: 1;
+  pointer-events: auto;
+  transition: 0.3s 0s ease;
+}
+
+.img a:hover {
+  background-color: var(--cor-primaria-escura);
+  color: white;
+}
