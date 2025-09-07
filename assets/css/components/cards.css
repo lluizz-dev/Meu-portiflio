@@ -60,14 +60,17 @@
   z-index: 1;
 }
 
+.card .img,
+.card aside {
+  transition: transform 0.3s ease;
+}
+
 .card:hover .img {
   transform: scale(1.05);
-  transition: transform 0.3s ease;
 }
 
 .card:hover aside {
   transform: translateY(-2.5px);
-  transition: transform 0.3s ease;
 }
 
 aside {
