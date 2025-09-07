@@ -1,5 +1,9 @@
 /* Estilização da página principal(home) */
 
+body {
+    background-color: #ffffff;
+}
+
 /* AJEITAR A BARRA DE ROLAGEM EMBAIXO */
 
 /* header */
@@ -82,12 +86,14 @@ main > .centralizar {
     font-size: 1rem;
     font-weight: bold;
     color: var(--texto-escuro);
+    text-align: center;
 }
 
 .world > h2 {
     margin: 0;
     font-size: 1.5rem;
     color: var(--cor-segundaria);
+    text-align: center;
 }
 
 /* Características */

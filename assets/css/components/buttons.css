@@ -3,22 +3,22 @@
 /* Botão do hero */
 
 .world > a {
-    text-decoration: none;
-    color: var(--cor-segundaria );
-    display: inline-block;
-    border: 2px solid var(--cor-segundaria);
-    border-radius: 5px;
-    width: fit-content;
-    font-size: 0.875rem;
-    padding: 1rem;
-    position: relative;
-    font-weight: 500;
+  text-decoration: none;
+  color: var(--cor-segundaria);
+  display: inline-block;
+  border: 2px solid var(--cor-segundaria);
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 0.875rem;
+  padding: 1rem;
+  position: relative;
+  font-weight: 500;
 }
 
 .world > a:hover {
-    background-color: var(--cor-segundaria);
-    color: var(--fundo-hero);
-    transition: 0.3s 0s ease;
+  background-color: var(--cor-segundaria);
+  color: var(--fundo-hero);
+  transition: 0.3s 0s ease;
 }
 
 /* TODO: AJEITAR O BOTÃO NA RESPONSIVIDADE */
@@ -28,32 +28,33 @@
 /* Botões de seção */
 
 .botaos > button {
-    background-color: transparent;
-    border: 1px solid var(--cor-primaria);
-    border-radius: 20px;
-    padding: 0.5rem 1.5rem;
-    font-size: 0.875rem;
-    font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  color: #111111;
+  border: 1px solid var(--cor-primaria);
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .botaos > button:first-child {
-    color: #ffffff;
-    background-color: var(--cor-primaria);
+  color: #ffffff;
+  background-color: var(--cor-primaria);
 }
 
 .botaos > button:hover {
-    color: #ffffff;
-    background-color: var(--cor-segundaria);
-    border-color: var(--cor-segundaria);
-    position: relative;
-    transition: 0.3s 0s ease;
-    cursor: pointer;
+  color: #ffffff;
+  background-color: var(--cor-segundaria);
+  border-color: var(--cor-segundaria);
+  position: relative;
+  transition: 0.3s 0s ease;
+  cursor: pointer;
 }
 
 /* Botão do card */
 
 .img {
-    position: relative;
+  position: relative;
 }
 
 .img a {
@@ -82,3 +83,25 @@
   background-color: var(--cor-primaria-escura);
   color: white;
 }
+
+
+/* Botão do Projeto */
+
+main > .centralizar > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--cor-primaria);
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+main > .centralizar > a span {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+main > .centralizar > a:hover span {
+  transform: translateX(20px);
+}
+

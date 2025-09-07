@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background-color: var(--fundo-claro);
 }
 
 .container {
@@ -27,6 +28,7 @@ body {
     --fundo-hero: #e5f3dd;
     --texto-escuro: #333333;
     --texto-cinza: #777777;
+    --sombra: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* Header */
@@ -35,7 +37,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: fixed;
@@ -63,6 +65,10 @@ span {
     color: #5a933c;
 }
 
+a {
+    text-decoration: none;
+}
+
 .pag {
     display: flex;
     gap: 1.5rem;
@@ -76,7 +82,7 @@ span {
 /* Main */
 
 main {
-    margin: 57px 0 3rem 0;
+    margin: 57px 0 48px 0;
 }
 
 /* Footer */
@@ -164,6 +170,7 @@ footer > .centralizar > p {
 }
 
 /* Responsividade */
+
 
 @media screen and (max-width: 768px) {
 
