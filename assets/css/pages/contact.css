@@ -38,20 +38,41 @@ main {
     background-color: #ecf0f1;
 }
 
+
 .centralizar {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'p1 p2';
-    gap: 1.5rem;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    'titulo vazio'
+    'p1 p2';
+    gap: 2rem;
+}
+.centralizar > h1 {
+    grid-area: titulo;
+    color: var(--texto-escuro);
+    font-size: 2rem;
 }
 
 aside {
     grid-area: p2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
-p {
+aside > * > * {
+    color: var(--texto-escuro);
     margin: 0;
 }
-h3 {
-    margin: 0;
+
+/* Resposividade */
+
+@media screen and (max-width: 768px) {
+    .centralizar {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 1fr 1fr;
+        grid-template-areas: 'titulo' 'p2' 'p1' 'vazio';
+    }
 }

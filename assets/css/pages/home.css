@@ -86,14 +86,12 @@ main > .centralizar {
     font-size: 1rem;
     font-weight: bold;
     color: var(--texto-escuro);
-    text-align: center;
 }
 
 .world > h2 {
     margin: 0;
     font-size: 1.5rem;
     color: var(--cor-segundaria);
-    text-align: center;
 }
 
 /* Características */
@@ -132,7 +130,7 @@ aside i, aside p, aside h3 {
         align-items: center;
     }
 
-    .world p {
+    .world p, .world h2 {
         text-align: center;
     }
 }
@@ -141,6 +139,7 @@ aside i, aside p, aside h3 {
     .meio {
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -148,4 +147,6 @@ aside i, aside p, aside h3 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+
 }
+
