@@ -33,37 +33,6 @@ body {
     --sombra: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-/* Header */
-
-header {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 1rem 0;
-    background-color: #fff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 99;
-}
-
-header > .centralizar {
-    display: flex;
-    justify-content: space-between;
-}
-
-header a {
-    text-decoration: none;
-    color: #354d2a;
-}
-
-header > .centralizar > a {
-    width: auto;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
 span {
     color: #5a933c;
 }
@@ -72,104 +41,10 @@ a {
     text-decoration: none;
 }
 
-.pag {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.pag a {
-    font-size: 0.875rem;
-    font-weight: 500;
-}
-
 /* Main */
 
 main {
     margin: 57px 0 48px 0;
-}
-
-/* Footer */
-
-/* RESOLVER PROBLEMA DA COR */
-
-footer {
-    background-color: #354d2a;
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-    padding: 1.5rem;
-}
-footer > .centralizar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer_1 {
-    grid-area: sobre;
-}
-
-.footer_1 p {
-    color: rgba(119, 119, 119, 1);
-    font-size: 1rem;
-}
-
-.footer_2 {
-    grid-area: links;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.footer_2 > a {
-    text-decoration: none;
-    color: rgba(119, 119, 119, 0.7);
-    font-size: 1rem;
-}
-
-.footer_3 {
-    grid-area: redes;
-
-}
-
-.footer_3 i {
-    color: #ffffff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(119, 119, 119, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer_3 a {
-    text-decoration: none;
-    display: inline-block;
-}
-
-.footer_3 > h3 ~ a {
-    padding-top: 1rem;
-    padding-right: 1rem;
-}
-
-.f_p1 {
-    display: grid;
-    grid-template-areas: 'sobre links redes';
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-bottom: 0.1px solid rgba(119, 119, 119, 1);
-    padding-bottom: 3rem;
-}
-
-article h3 {
-    border-bottom: 1px solid #5a933c;
-    margin: 1rem 0 0 0;
-}
-
-footer > .centralizar > p {
-    color: rgba(119, 119, 119, 1);
-    font-size: 0.875rem;
 }
 
 /* Responsividade */

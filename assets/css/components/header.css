@@ -1,0 +1,40 @@
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+header > .centralizar {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: #354d2a;
+}
+
+header > .centralizar > a {
+    width: auto;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.pag {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.pag a {
+    font-size: 0.875rem;
+    font-weight: 500;
+}

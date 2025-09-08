@@ -1,10 +1,10 @@
-/* header */
+/* Estilo da página de portfólio */
 
+/* Marca o menu ativo (segundo link) */
 .pag > a {
     position: relative;
     color: #354d2a;
 }
-
 .pag a:nth-child(2)::after {
     content: "";
     position: absolute;
@@ -15,6 +15,7 @@
     background-color: #5a933c;
 }
 
+/* Hover com animação */
 .pag > a::after {
     content: "";
     position: absolute;
@@ -25,25 +26,23 @@
     background-color: #5a933c;
     transition: width 0.3s ease;
 }
-
 .pag > a:hover::after {
   width: 100%;
 }
 
-/*  */
-
+/* Layout principal */
 main {
     display: flex;
     justify-content: center;
     background-color: #ecf0f1;
 }
 
+/* Seção inicial com título e botões */
 .inicio {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1.5rem;
-    flex-wrap: nowrap;
     text-align: center;
 }
 
@@ -57,14 +56,12 @@ main {
     display: flex;
 }
 
-/* Responsividade */
-
+/* Responsividade: grid para os cards */
 @media screen and (max-width: 768px) {
     .cards {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:'p1' 'p2' 'p3' 'p4' 'p5' 'p6' 'p7' 'p8';
+        grid-template-rows: repeat(8, 1fr);
         gap: 2rem;
     }
 }

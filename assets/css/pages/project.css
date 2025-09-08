@@ -1,11 +1,10 @@
-/* header */
+/* Estilo da página de projeto detalhado */
 
+/* Links do menu */
 .pag > a {
     position: relative;
     color: #354d2a;
 }
-
-
 .pag > a::after {
     content: "";
     position: absolute;
@@ -16,23 +15,19 @@
     background-color: #5a933c;
     transition: width 0.3s ease;
 }
-
 .pag > a:hover::after {
   width: 100%;
 }
 
-/* main */
-
-
-main{
+/* Layout principal */
+main {
     display: flex;
     justify-content: center;
     background-color: #ecf0f1;
     padding: 1.5rem;
 }
 
-/* Projeto */
-
+/* Container do projeto */
 aside.projeto {
     background-color: #ffffff;
     border-radius: 8px;
@@ -41,113 +36,94 @@ aside.projeto {
     box-shadow: var(--sombra);
 }
 
-
+/* Título e dados principais */
 aside.p1 h1 {
     margin: 0;
     padding: 1rem 0;
     color: var(--cor-segundaria);
     font-size: 2rem;
 }
-
 aside.p1 span {
     font-size: 1rem;
     font-weight: 500;
     padding-right: 10px;
 }
-
 aside.p1 p {
     display: inline;
     color: var(--texto-cinza);
     font-size: 0.875rem;
 }
-
 aside.p1 + img {
     object-fit: cover;
     height: 530px;
     width: 100%;
 }
 
-aside.p1 , aside.p2{
+/* Texto explicativo */
+aside.p1 , aside.p2 {
     padding: 1.5rem;
 }
-
 aside.p2 h2 {
     color: var(--cor-segundaria);
     font-size: 1.5rem;
 }
-
 aside.p2 p {
     color: var(--texto-escuro);
     font-size: 1rem;
 }
 
+/* Grid das informações extras */
 .meio {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
-
 .meio h3 {
     color: var(--texto-escuro);
 }
 
+/* Galeria de imagens */
 .grade {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
-
 aside.p2 .grade img {
     object-fit: cover;
     width: 100%;
     height: 200px;
     border-radius: 5px;
-    position: relative;
     transition: transform 0.3s ease;
 }
-
 aside.p2 .grade img:hover {
   transform: scale(1.05);
 }
-
 aside.p2 .grade img:nth-child(3) {
     box-shadow: var(--sombra);
     background-color: var(--fundo-claro);
 }
 
-/* Recursividade */
-
+/* Responsividade */
 @media screen and (max-width: 992px) {
     .meio {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
 }
-
 @media screen and (max-width: 768px) {
     .meio {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
     }
     .grade {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 1rem;
     }
 }
-
 @media screen and (max-width: 576px) {
-    /* todo o grid vai para 4l */
     .meio {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
     }
     .grade {
-        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 1rem;
+        grid-template-rows: repeat(4, 1fr);
     }
 }
